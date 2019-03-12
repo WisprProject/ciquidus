@@ -1,20 +1,20 @@
-Ciquidus Alpha - 1.7.2
+Wispr explorer 0.1
 ================
 
-The Chaincoin block explorer.
+The Wispr block explorer.
 
-This project is a fork of [Iquidus Explorer](https://github.com/iquidus/explorer) so massive thanks go out to Luke Williams for his code! Thank you!!!
+This project is a fork of [Iquidus Explorer](https://github.com/iquidus/explorer) and [ciquidus](https://github.com/suprnurd/ciquidus), the Wispr team thanks these for developers for creating and improving this software.
 
 ### See it in action
 
-*  [explorer.chaincoin.org](https://explorer.chaincoin.org)
-
+*  [explorer.wispr.tech](https://explorer.wispr.tech/)
+NOTE: this link isn't live yet, currently running at: [http://52.210.5.17:8080/](http://52.210.5.17:8080/)
 
 ### Requires
 
 *  node.js >= 0.10.28
 *  mongodb 2.6.x
-*  *coind
+*  wisprd (found at: https://github.com/WisprProject/core/releases)
 
 ### Create database
 
@@ -28,15 +28,11 @@ Create databse:
 
 Create user with read/write access:
 
-    > db.createUser( { user: "ciquidus", pwd: "3xp!0reR", roles: [ "readWrite" ] } )
-
-*note: If you're using mongo shell 2.4.x, use the following to create your user:
-
-    > db.addUser( { user: "username", pwd: "password", roles: [ "readWrite"] })
+    > db.createUser( { user: "wisprexplorer", pwd: "g374NeXp10r3R!", roles: [ "readWrite" ] } )
 
 ### Get the source
 
-    git clone https://github.com/suprnurd/ciquidus explorer
+    git clone https://github.com/WisprProject/ciquidus.git explorer
 
 ### Install node modules
 
@@ -98,14 +94,9 @@ forcesync.sh and forcesynclatest.sh (located in scripts/) can be used to force t
 
 ### Wallet
 
-The wallet connected to Ciquidus must be running with atleast the following flags:
+The wallet connected to explorer (Ciquidus) must be running with atleast the following flags:
 
-    -daemon -txindex
-
-### Donate
-    
-    CHC: CLkWg5YSLod772uLzsFRxHgHiWVGAJSezm
-    BTC: 1J8Chi5teDJrvBtSuQhioNCHfTNBCcCrPx
+    `-rpcuser=#your rpc username# -rpcpassword=#your rpc password# -rpcport=17001 -rpcallowip=127.0.0.1 -txindex -staking=0 `
 
 ### Known Issues
 
@@ -135,7 +126,8 @@ Where [SIZE] is an integer higher than the default.
 
 ### License
 
-Copyright (c) 2017, The Chaincoin Community  
+Copyright (c) 2019, Wispr
+Copyright (c) 2017 - 2018, The Chaincoin Community  
 Copyright (c) 2015, Iquidus Technology  
 Copyright (c) 2015, Luke Williams  
 All rights reserved.
@@ -150,7 +142,7 @@ modification, are permitted provided that the following conditions are met:
   this list of conditions and the following disclaimer in the documentation
   and/or other materials provided with the distribution.
 
-* Neither the name of Iquidus Technology nor the names of its
+* Neither the name of (Iquidus Technology or Wispr) nor the names of its
   contributors may be used to endorse or promote products derived from
   this software without specific prior written permission.
 
