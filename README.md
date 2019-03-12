@@ -102,7 +102,7 @@ The wallet connected to explorer (Ciquidus) must be running with atleast the fol
 
 **script is already running.**
 
-If you receive this message when launching the sync script either a) a sync is currently in progress, or b) a previous sync was killed before it completed. If you are certian a sync is not in progress remove the index.pid from the tmp folder in the explorer root directory.
+If you receive this message when launching the sync script either a) a sync is currently in progress, or b) a previous sync was killed before it completed. If you are certain a sync is not in progress remove the index.pid from the tmp folder in the explorer root directory.
 
     rm tmp/index.pid
 
@@ -126,7 +126,7 @@ Where [SIZE] is an integer higher than the default.
 
 ### License
 
-Copyright (c) 2019, Wispr
+Copyright (c) 2019, Wispr  
 Copyright (c) 2017 - 2018, The Chaincoin Community  
 Copyright (c) 2015, Iquidus Technology  
 Copyright (c) 2015, Luke Williams  
