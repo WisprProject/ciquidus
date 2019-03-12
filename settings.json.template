@@ -5,36 +5,36 @@
 */
 {
   // name your instance!
-  "title": "CIQUIDUS",
+  "title": "Wispr explorer",
 
-  "address": "127.0.0.1:3001",
+  "address": "127.0.0.1:8080",
 
   // coin name
-  "coin": "Chaincoin",
+  "coin": "Wispr",
 
   // coin symbol
-  "symbol": "CHC",
+  "symbol": "WSP",
 
   // logo
-  "logo": "/images/chain_dark-128x128.png",
+  "logo": "/images/wispr_logo.png",
 
   // favicon
-  "favicon": "public/favicon.ico",
+  "favicon": "public/favicon.png",
 
   // Uses bootswatch themes (http://bootswatch.com/)
   // Valid options:
   //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
   //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
   // theme (see /public/themes for available themes)
-  "theme": "Slate",
+  "theme": "Cosmo",
 
   // port to listen for requests on.
-  "port" : 3001,
+  "port" : 8080,
 
   // database settings (MongoDB)
   "dbsettings": {
-    "user": "ciquidus",
-    "password": "3xp!0reR",
+    "user": "wisprexplorer",
+    "password": "g374NeXp10r3R!",
     "database": "explorerdb",
     "address": "localhost",
     "port": 27017
@@ -47,13 +47,13 @@
   // wallet settings
   "wallet": {
     "host": "localhost",
-    "port": 11995,
-    "user": "chaincoinrpc",
-    "pass": "123gfjk3R3pCCVjHtbRde2s5kzdf233sa"
+    "port": 17001,
+    "user": "wisprexplorerrpc",
+    "pass": "be_creative"
   },
 
   // confirmations
-  "confirmations": 40,
+  "confirmations": 10,
 
   // language settings
   "locale": "locale/en.json",
@@ -78,8 +78,8 @@
   // index page (valid options for difficulty are POW, POS or Hybrid)
   "index": {
     "show_hashrate": true,
-    "difficulty": "POW",
-    "last_txs": 100
+    "difficulty": "POS",
+    "last_txs": 25
   },
 
   // ensure links on API page are valid
@@ -94,10 +94,10 @@
   //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex, coinexchange
   //default market is loaded by default and determines last price in header
   "markets": {
-    "coin": "CHC",
+    "coin": "WSP",
     "exchange": "BTC",
     "enabled": ["cryptopia"],
-    "cryptopia_id": "2186",
+    "cryptopia_id": "",
     "ccex_key" : "Get-Your-Own-Key",
     "coinexchange_id": "18",
     "default": "cryptopia"
@@ -120,23 +120,23 @@
   },
 
   // twitter, facebook, googleplus, bitcointalk, github, slack, website
-  "twitter": "suprnurd",
-  "facebook": "yourfacebookpage",
+  "twitter": "WisprTech",
+  "facebook": "WisprTech",
   "googleplus": "yourgooglepluspage",
   "bitcointalk": "yourbitcointalktopicvalue",
-  "github": "yourgithubusername/yourgithubrepo",
+  "github": "WisprProject/core",
   "slack": "yourfullslackinviteurl",
-  "website": "yourfullwebsiteurl",
+  "website": "https://wispr.tech/",
 
   //genesis
-  "genesis_tx": "fa6ef9872494fa9662cf0fecf8c0135a6932e76d7a8764e1155207f3205c7c88",
-  "genesis_block": "00000f639db5734b2b861ef8dbccc33aebd7de44d13de000a12d093bcc866c64",
+  "genesis_tx": "bcd0064f46daed0b3c1ccff16656a0da04b5509924118b7c13d21c81d62ec521",
+  "genesis_block": "0000ec93e0a3fe0aafa3be7dafe1290f5fca039a4037dd5174bc3dd7a35d67f0",
 
   //heavy (enable/disable additional heavy features)
   "heavy": false,
 
   //amount of txs to index per address (stores latest n txs)
-  "txcount": 100,
+  "txcount": 250,
 
   //show total sent & received on address page (set false if PoS)
   "show_sent_received": true,
@@ -147,7 +147,7 @@
   // HEAVY: retreive from heavys getsupply api call
   // BALANCES : total of all address balances
   // TXOUTSET : retreive from gettxoutsetinfo api call
-  "supply": "TXOUTSET",
+  "supply": "GETINFO",
 
   // how to acquire network hashrate
   // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
